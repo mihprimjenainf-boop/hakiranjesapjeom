@@ -8,6 +8,6 @@ lozinka = 123
 def rce():
     at = int(request.args.get("lozinka"))
 
-    if lozinka == at:
+    if int(lozinka) == int(at):
         return "1"
     return "0"
