@@ -2,7 +2,7 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-lozinka = 123
+lozinka = os.environ.get("LOZINKA")
 
 @app.route("/server_lozinka")
 def rce():
